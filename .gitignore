@@ -156,6 +156,11 @@
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
 
+# Next.js
+**/.next/
+**/out/
+next-env.d.ts
+
 # Compressed files
 *.zip
 *.rar
