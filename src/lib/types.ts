@@ -16,16 +16,13 @@ export interface GeoPoint {
 }
 
 export interface PropertyLocation {
-  /** Bairro / zona (ex.: Polana, Coop, Zimpeto) */
   neighborhood: string;
-  /** Cidade (ex.: Maputo, Matola, Marracuene) */
   city: string;
   coordinates: GeoPoint;
 }
 
 export interface Property {
   id: string;
-  /** Referência interna do imóvel (ex.: NFI-0001) */
   reference: string;
   title: string;
   slug: string;
@@ -33,13 +30,11 @@ export interface Property {
   transactionType: TransactionType;
   price: number;
   currency: "MZN";
-  /** Preenchido apenas para arrendamento mensal */
   pricePeriod: "mes" | null;
   location: PropertyLocation;
   bedrooms: number;
   bathrooms: number;
   parking: number;
-  /** Área em metros quadrados */
   area: number;
   description: string;
   features: string[];
@@ -47,10 +42,6 @@ export interface Property {
   status: PropertyStatus;
   featured: boolean;
   createdAt: string;
-  /**
-   * Marca registos de demonstração. Quando o inventário real for ligado
-   * a uma base de dados / CMS, estes registos são substituídos.
-   */
   isDemo: boolean;
 }
 
@@ -71,3 +62,37 @@ export type PropertySort =
   | "preco-desc"
   | "area-desc"
   | "recentes";
+
+export type LeadSource = "visita" | "contacto" | "whatsapp";
+
+export type LeadStatus =
+  | "novo"
+  | "em-contacto"
+  | "visita-agendada"
+  | "visita-realizada"
+  | "ganho"
+  | "perdido";
+
+export interface Lead {
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+  source: LeadSource;
+  status: LeadStatus;
+  propertyId: string;
+  propertyTitle: string;
+  visitDate: string;
+  visitTime: string;
+  notes: string;
+}
+
+export type PropertyInput = Omit<Property, "id" | "reference" | "slug" | "createdAt" | "currency"> & {
+  id?: string;
+  reference?: string;
+  slug?: string;
+  createdAt?: string;
+};

@@ -18,6 +18,8 @@ import { propertyTypeLabels, transactionLabels } from "@/lib/format";
 import { site } from "@/lib/site";
 import { breadcrumbSchema, propertySchema } from "@/lib/seo";
 
+export const dynamic = "force-dynamic";
+
 type PageProps = {
   params: { slug: string };
 };
@@ -122,7 +124,11 @@ export default function PropertyPage({ params }: PageProps) {
           </div>
 
           <div className="min-w-0 lg:sticky lg:top-24 lg:self-start">
-            <PropertyContactCard propertyTitle={property.title} reference={property.reference} />
+            <PropertyContactCard
+              propertyId={property.id}
+              propertyTitle={property.title}
+              reference={property.reference}
+            />
             <p className="mt-4 rounded-xl border border-paper-line bg-white px-4 py-3 text-[12px] leading-relaxed text-ink-500">
               {demoDisclaimer}
             </p>

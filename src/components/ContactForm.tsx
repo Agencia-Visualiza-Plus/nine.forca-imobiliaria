@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckIcon, WhatsAppIcon } from "./icons";
+import { CheckIcon, ChevronDownIcon, WhatsAppIcon } from "./icons";
 import { whatsappLink } from "@/lib/whatsapp";
 
 type Interest = "comprar" | "arrendar" | "vender" | "outro";
@@ -57,7 +57,7 @@ export function ContactForm({ className = "", defaultInterest = "comprar" }: Con
     return Object.keys(nextErrors).length === 0;
   }
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!validate()) return;
 
@@ -70,6 +70,18 @@ export function ContactForm({ className = "", defaultInterest = "comprar" }: Con
       `Interesse: ${interestLabel}`,
       `Mensagem: ${form.message.trim()}`,
     ].filter(Boolean);
+
+    await fetch("/api/leads", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        interest: interestLabel,
+        message: form.message,
+      }),
+    }).catch(() => undefined);
 
     const link = whatsappLink(lines.join("\n"));
     setSentLink(link);
@@ -152,19 +164,22 @@ export function ContactForm({ className = "", defaultInterest = "comprar" }: Con
           <label className="field-label" htmlFor="contact-interest">
             Interesse
           </label>
-          <select
-            id="contact-interest"
-            name="interest"
-            value={form.interest}
-            onChange={(event) => update("interest", event.target.value as Interest)}
-            className="field"
-          >
-            {interests.map((item) => (
-              <option key={item.value} value={item.value}>
-                {item.label}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              id="contact-interest"
+              name="interest"
+              value={form.interest}
+              onChange={(event) => update("interest", event.target.value as Interest)}
+              className="field pr-9"
+            >
+              {interests.map((item) => (
+                <option key={item.value} value={item.value}>
+                  {item.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDownIcon className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-500" />
+          </div>
         </div>
 
         <div className="sm:col-span-2">

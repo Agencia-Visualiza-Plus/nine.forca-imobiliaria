@@ -7,9 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        // As páginas de resultados filtrados não devem ser indexadas
-        // para evitar conteúdo duplicado na pesquisa.
-        disallow: ["/imoveis?"],
+        disallow: ["/imoveis?", "/admin", "/admin/", "/api/"],
       },
     ],
     sitemap: `${site.url}/sitemap.xml`,

@@ -10,14 +10,16 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { propertyTypePluralLabels } from "@/lib/format";
 import {
   filterProperties,
+  getAllProperties,
   parseFiltersFromSearchParams,
-  properties,
   sortProperties,
 } from "@/lib/properties";
 import { site } from "@/lib/site";
 import { generalWhatsappMessage } from "@/lib/whatsapp";
 import { breadcrumbSchema, itemListSchema, organizationSchema } from "@/lib/seo";
 import type { PropertySort } from "@/lib/types";
+
+export const dynamic = "force-dynamic";
 
 type SearchParams = Record<string, string | string[] | undefined>;
 
@@ -87,7 +89,7 @@ export default function PropertiesPage({ searchParams }: { searchParams: SearchP
     ? (sortParam as PropertySort)
     : "relevancia";
 
-  const results = sortProperties(filterProperties(properties, filters), sort);
+  const results = sortProperties(filterProperties(getAllProperties(), filters), sort);
 
   const center =
     results.length > 0
@@ -154,7 +156,7 @@ export default function PropertiesPage({ searchParams }: { searchParams: SearchP
             comerciais. Fale connosco no WhatsApp para agendar uma visita.
           </p>
           <div className="mt-5">
-            <SearchBar variant="inline" filters={filters} advanced idPrefix="page" />
+            <SearchBar variant="inline" filters={filters} idPrefix="page" />
           </div>
         </div>
       </div>

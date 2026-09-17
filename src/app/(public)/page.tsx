@@ -35,7 +35,7 @@ const homeFaq = [
   {
     question: "Como marco uma visita a um imóvel?",
     answer:
-      "Basta escolher o imóvel e falar connosco pelo WhatsApp ou telefone. Combinamos consigo o dia e a hora da visita com acompanhamento.",
+      "Escolha o imóvel e peça uma visita no formulário da página, ou fale connosco pelo WhatsApp. Confirmamos o dia e a hora e acompanhamos a visita.",
   },
   {
     question: "Tenho um imóvel para vender. Como faço?",
@@ -43,6 +43,8 @@ const homeFaq = [
       "Fale com a Nine pelo WhatsApp e indique a zona, o tipo de imóvel e as principais características. A equipa orienta os passos seguintes do processo.",
   },
 ];
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Imóveis em Maputo e Matola | Casas e Apartamentos",

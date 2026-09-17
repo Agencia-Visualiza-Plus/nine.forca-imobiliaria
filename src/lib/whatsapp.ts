@@ -36,3 +36,9 @@ export function locationWhatsappMessage(place: string): string {
 export function typeWhatsappMessage(typeLabel: string): string {
   return `Olá, Nine Força Imobiliária. Estou à procura de ${typeLabel.toLowerCase()} e gostaria de receber ajuda.`;
 }
+
+export function customerWhatsappLink(phone: string, message: string): string {
+  let digits = phone.replace(/\D/g, "");
+  if (/^8[2-7]/.test(digits)) digits = `258${digits}`;
+  return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
+}

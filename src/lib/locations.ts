@@ -13,7 +13,7 @@ export const locationCategories: LocationCategory[] = [
   {
     name: "Maputo",
     slug: "maputo",
-    image: "/locations/maputo.jpg",
+    image: "/locations/maputo-v2.jpg",
     description: "Capital de Moçambique, com forte procura residencial e comercial.",
   },
   {
@@ -31,19 +31,19 @@ export const locationCategories: LocationCategory[] = [
   {
     name: "Polana",
     slug: "polana",
-    image: "/locations/polana.jpg",
+    image: "/locations/polana-v2.jpg",
     description: "Zona residencial central, próxima de serviços e avenidas principais.",
   },
   {
     name: "Sommerschield",
     slug: "sommerschield",
-    image: "/locations/sommerschield.jpg",
+    image: "/locations/sommerschield-v2.jpg",
     description: "Bairro central de Maputo, com edifícios e moradias de referência.",
   },
   {
     name: "Coop",
     slug: "coop",
-    image: "/locations/coop.jpg",
+    image: "/locations/coop-v2.jpg",
     description: "Zona residencial consolidada, com boa acessibilidade ao centro.",
   },
   {
@@ -55,19 +55,19 @@ export const locationCategories: LocationCategory[] = [
   {
     name: "Magoanine",
     slug: "magoanine",
-    image: "/locations/magoanine.jpg",
+    image: "/locations/magoanine-v2.jpg",
     description: "Zona em expansão, com opções de habitação e terrenos.",
   },
   {
     name: "Zimpeto",
     slug: "zimpeto",
-    image: "/locations/zimpeto.jpg",
+    image: "/locations/zimpeto-v2.jpg",
     description: "Zona com boas vias de acesso e procura por habitação e serviços.",
   },
   {
     name: "Marracuene",
     slug: "marracuene",
-    image: "/locations/marracuene.jpg",
+    image: "/locations/marracuene-v2.jpg",
     description: "Distrito a norte de Maputo, com espaço e ambiente mais calmo.",
   },
 ];

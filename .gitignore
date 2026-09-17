@@ -179,3 +179,4 @@ next-env.d.ts
 *.lz
 *.lzma
 *.iso
+.vercel

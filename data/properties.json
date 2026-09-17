@@ -1,0 +1,489 @@
+[
+  {
+    "id": "nfi-0001",
+    "reference": "NFI-0001",
+    "title": "Moradia T4 com jardim e piscina na Polana",
+    "slug": "moradia-t4-com-jardim-e-piscina-na-polana",
+    "type": "moradia",
+    "transactionType": "comprar",
+    "price": 28500000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Polana",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.9707,
+        "lng": 32.6045
+      }
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "parking": 2,
+    "area": 420,
+    "description": "Moradia de dois pisos numa das zonas mais procuradas de Maputo, com salas amplas, cozinha equipada e um jardim com piscina. Excelente exposição solar e acabamentos cuidados. Localização tranquila, próxima de serviços, escolas e acessos principais.",
+    "features": [
+      "Jardim",
+      "Piscina",
+      "Cozinha equipada",
+      "Garagem para 2 viaturas",
+      "Segurança 24h",
+      "Varanda",
+      "Ar condicionado"
+    ],
+    "images": [
+      "/properties/house-01.jpg",
+      "/properties/living-01.jpg",
+      "/properties/kitchen-01.jpg",
+      "/properties/bed-01.jpg"
+    ],
+    "status": "disponivel",
+    "featured": true,
+    "createdAt": "2026-02-10",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0002",
+    "reference": "NFI-0002",
+    "title": "Apartamento T3 mobilado no Sommerschield",
+    "slug": "apartamento-t3-mobilado-no-sommerschield",
+    "type": "apartamento",
+    "transactionType": "comprar",
+    "price": 12900000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Sommerschield",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.9628,
+        "lng": 32.6116
+      }
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "parking": 1,
+    "area": 165,
+    "description": "Apartamento mobilado em edifício moderno, com sala de estar ampla e varanda. Prédio com elevador e portaria. Zona central com boa oferta de comércio, restaurantes e serviços, a poucos minutos do centro da cidade.",
+    "features": [
+      "Mobilado",
+      "Elevador",
+      "Varanda",
+      "Portaria",
+      "Cozinha equipada",
+      "Ar condicionado"
+    ],
+    "images": [
+      "/properties/apartment-01.jpg",
+      "/properties/living-04.jpg",
+      "/properties/living-02.jpg",
+      "/properties/bed-02.jpg"
+    ],
+    "status": "disponivel",
+    "featured": true,
+    "createdAt": "2026-02-06",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0003",
+    "reference": "NFI-0003",
+    "title": "Moradia T3 em condomínio na Matola",
+    "slug": "moradia-t3-em-condominio-na-matola",
+    "type": "moradia",
+    "transactionType": "comprar",
+    "price": 8750000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Matola",
+      "city": "Matola",
+      "coordinates": {
+        "lat": -25.9622,
+        "lng": 32.4589
+      }
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "parking": 2,
+    "area": 280,
+    "description": "Moradia em condomínio fechado, com bom espaço exterior e quintal. Ideal para famílias que procuram tranquilidade sem perder a proximidade à cidade. Condomínio com acesso controlado.",
+    "features": [
+      "Condomínio fechado",
+      "Quintal",
+      "Acesso controlado",
+      "Cozinha equipada",
+      "Poço de água"
+    ],
+    "images": [
+      "/properties/house-04.jpg",
+      "/properties/living-05.jpg",
+      "/properties/living-08.jpg",
+      "/properties/bed-03.jpg"
+    ],
+    "status": "disponivel",
+    "featured": true,
+    "createdAt": "2026-02-02",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0004",
+    "reference": "NFI-0004",
+    "title": "Terreno para construção em Marracuene",
+    "slug": "terreno-para-construcao-em-marracuene",
+    "type": "terreno",
+    "transactionType": "comprar",
+    "price": 3200000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Marracuene",
+      "city": "Marracuene",
+      "coordinates": {
+        "lat": -25.7418,
+        "lng": 32.6761
+      }
+    },
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "parking": 0,
+    "area": 1800,
+    "description": "Terreno plano e vedado, com acesso por estrada de boa qualidade e ligação à rede elétrica nas proximidades. Bom potencial para habitação unifamiliar ou projeto de pequeno porte.",
+    "features": [
+      "Terreno plano",
+      "Vedado",
+      "Acesso por estrada",
+      "Área sossegada"
+    ],
+    "images": [
+      "/properties/land-01.jpg",
+      "/properties/land-02.jpg"
+    ],
+    "status": "disponivel",
+    "featured": false,
+    "createdAt": "2026-01-28",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0005",
+    "reference": "NFI-0005",
+    "title": "Apartamento T2 com vista para o mar na Costa do Sol",
+    "slug": "apartamento-t2-com-vista-para-o-mar-na-costa-do-sol",
+    "type": "apartamento",
+    "transactionType": "arrendar",
+    "price": 65000,
+    "currency": "MZN",
+    "pricePeriod": "mes",
+    "location": {
+      "neighborhood": "Costa do Sol",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.9354,
+        "lng": 32.6245
+      }
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "parking": 1,
+    "area": 120,
+    "description": "Apartamento de arrendamento a curta distância da marginal, com varanda voltada para o mar. Zona agradável para quem valoriza caminhadas e proximidade à praia, com restaurantes e comércio nas imediações.",
+    "features": [
+      "Vista para o mar",
+      "Varanda",
+      "Segurança",
+      "Cozinha equipada",
+      "Elevador"
+    ],
+    "images": [
+      "/properties/apartment-02.jpg",
+      "/properties/living-06.jpg",
+      "/properties/living-09.jpg"
+    ],
+    "status": "disponivel",
+    "featured": true,
+    "createdAt": "2026-02-12",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0006",
+    "reference": "NFI-0006",
+    "title": "Moradia T4 mobilada para arrendar no Triunfo",
+    "slug": "moradia-t4-mobilada-para-arrendar-no-triunfo",
+    "type": "moradia",
+    "transactionType": "arrendar",
+    "price": 120000,
+    "currency": "MZN",
+    "pricePeriod": "mes",
+    "location": {
+      "neighborhood": "Triunfo",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.9411,
+        "lng": 32.5724
+      }
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "parking": 2,
+    "area": 340,
+    "description": "Moradia mobilada e equipada, pronta a habitar, com áreas sociais amplas e quintal. Excelente para famílias que necessitam de instalação rápida, numa zona residencial consolidada.",
+    "features": [
+      "Mobilada",
+      "Equipada",
+      "Quintal",
+      "Garagem",
+      "Segurança 24h",
+      "Ar condicionado"
+    ],
+    "images": [
+      "/properties/house-06.jpg",
+      "/properties/living-03.jpg",
+      "/properties/kitchen-01.jpg",
+      "/properties/bed-01.jpg"
+    ],
+    "status": "disponivel",
+    "featured": true,
+    "createdAt": "2026-02-08",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0007",
+    "reference": "NFI-0007",
+    "title": "Escritório moderno no centro de Maputo",
+    "slug": "escritorio-moderno-no-centro-de-maputo",
+    "type": "escritorio",
+    "transactionType": "comprar",
+    "price": 18000000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Baixa",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.9736,
+        "lng": 32.5752
+      }
+    },
+    "bedrooms": 0,
+    "bathrooms": 2,
+    "parking": 2,
+    "area": 210,
+    "description": "Escritório em edifício de referência no centro da cidade, com layout aberto e salas de reunião. Boa visibilidade, acessos e proximidade a serviços bancários e institucionais.",
+    "features": [
+      "Layout aberto",
+      "Sala de reuniões",
+      "Elevador",
+      "Ar condicionado",
+      "Estacionamento",
+      "Segurança"
+    ],
+    "images": [
+      "/properties/office-01.jpg",
+      "/properties/office-02.jpg",
+      "/properties/office-03.jpg"
+    ],
+    "status": "disponivel",
+    "featured": false,
+    "createdAt": "2026-01-25",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0008",
+    "reference": "NFI-0008",
+    "title": "Loja com boa frente na Matola",
+    "slug": "loja-com-boa-frente-na-matola",
+    "type": "loja",
+    "transactionType": "arrendar",
+    "price": 45000,
+    "currency": "MZN",
+    "pricePeriod": "mes",
+    "location": {
+      "neighborhood": "Matola",
+      "city": "Matola",
+      "coordinates": {
+        "lat": -25.9558,
+        "lng": 32.4642
+      }
+    },
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "parking": 1,
+    "area": 85,
+    "description": "Loja com ampla montra e boa frente de rua, em zona de forte circulação. Espaço versátil, adequado a comércio e serviços, com instalações sanitárias e armazenamento.",
+    "features": [
+      "Montra ampla",
+      "Frente de rua",
+      "Instalações sanitárias",
+      "Zona de armazenamento",
+      "Preparada para ar condicionado"
+    ],
+    "images": [
+      "/properties/store-01.jpg",
+      "/properties/store-02.jpg"
+    ],
+    "status": "disponivel",
+    "featured": false,
+    "createdAt": "2026-02-01",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0009",
+    "reference": "NFI-0009",
+    "title": "Armazém logístico no Zimpeto",
+    "slug": "armazem-logistico-no-zimpeto",
+    "type": "armazem",
+    "transactionType": "arrendar",
+    "price": 95000,
+    "currency": "MZN",
+    "pricePeriod": "mes",
+    "location": {
+      "neighborhood": "Zimpeto",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.8339,
+        "lng": 32.5632
+      }
+    },
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "parking": 4,
+    "area": 900,
+    "description": "Armazém com pé-direito alto e acesso para camiões, próximo de vias estruturantes. Inclui escritório de apoio, instalações sanitárias e área de manobra.",
+    "features": [
+      "Pé-direito alto",
+      "Acesso para camiões",
+      "Área de manobra",
+      "Escritório de apoio",
+      "Vigilância",
+      "Portão automático"
+    ],
+    "images": [
+      "/properties/warehouse-01.jpg",
+      "/properties/warehouse-02.jpg"
+    ],
+    "status": "disponivel",
+    "featured": false,
+    "createdAt": "2026-01-20",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0010",
+    "reference": "NFI-0010",
+    "title": "Apartamento T3 remodelado na Coop",
+    "slug": "apartamento-t3-remodelado-na-coop",
+    "type": "apartamento",
+    "transactionType": "comprar",
+    "price": 15500000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Coop",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.9531,
+        "lng": 32.5982
+      }
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "parking": 1,
+    "area": 150,
+    "description": "Apartamento recentemente remodelado, com acabamentos atuais e boa distribuição dos espaços. Zona residencial central, com fácil acesso ao centro e às principais avenidas.",
+    "features": [
+      "Remodelado",
+      "Cozinha equipada",
+      "Varanda",
+      "Elevador",
+      "Portaria",
+      "Ar condicionado"
+    ],
+    "images": [
+      "/properties/apartment-03.jpg",
+      "/properties/living-07.jpg",
+      "/properties/living-10.jpg",
+      "/properties/bed-02.jpg"
+    ],
+    "status": "disponivel",
+    "featured": false,
+    "createdAt": "2026-02-04",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0011",
+    "reference": "NFI-0011",
+    "title": "Moradia T3 em Magoanine",
+    "slug": "moradia-t3-em-magoanine",
+    "type": "moradia",
+    "transactionType": "comprar",
+    "price": 6900000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Magoanine",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.8603,
+        "lng": 32.5487
+      }
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "parking": 2,
+    "area": 240,
+    "description": "Moradia com quintal e espaço para expansão, em zona de crescimento rápido. Boa opção para primeira habitação, com comércio e transportes nas proximidades.",
+    "features": [
+      "Quintal",
+      "Espaço para expansão",
+      "Garagem",
+      "Cozinha equipada",
+      "Poço de água"
+    ],
+    "images": [
+      "/properties/house-08.jpg",
+      "/properties/living-02.jpg",
+      "/properties/living-05.jpg",
+      "/properties/bed-03.jpg"
+    ],
+    "status": "disponivel",
+    "featured": false,
+    "createdAt": "2026-01-30",
+    "isDemo": true
+  },
+  {
+    "id": "nfi-0012",
+    "reference": "NFI-0012",
+    "title": "Terreno vedado no Zimpeto",
+    "slug": "terreno-vedado-no-zimpeto",
+    "type": "terreno",
+    "transactionType": "comprar",
+    "price": 1850000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Zimpeto",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.8291,
+        "lng": 32.5716
+      }
+    },
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "parking": 0,
+    "area": 1000,
+    "description": "Terreno vedado em zona habitacional, com acesso por via asfaltada e proximidade a escolas e comércio. Bom para construção de habitação própria.",
+    "features": [
+      "Vedado",
+      "Via asfaltada",
+      "Zona habitacional",
+      "Próximo de serviços"
+    ],
+    "images": [
+      "/properties/land-03.jpg",
+      "/properties/land-02.jpg"
+    ],
+    "status": "disponivel",
+    "featured": false,
+    "createdAt": "2026-01-18",
+    "isDemo": true
+  }
+]

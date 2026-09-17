@@ -1,9 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { MobileCallBar } from "@/components/MobileCallBar";
 import { site } from "@/lib/site";
 
 const inter = Inter({
@@ -81,10 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Saltar para o conteúdo
         </a>
-        <Header />
-        <main id="conteudo">{children}</main>
-        <Footer />
-        <MobileCallBar />
+        {children}
       </body>
     </html>
   );

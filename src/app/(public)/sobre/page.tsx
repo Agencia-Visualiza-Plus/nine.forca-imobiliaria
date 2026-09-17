@@ -114,7 +114,7 @@ export default function AboutPage() {
           <div className="overflow-hidden rounded-2xl border border-paper-line bg-white shadow-card">
             <div className="relative aspect-[4/3] w-full">
               <Image
-                src="/locations/polana.jpg"
+                src="/locations/polana-v2.jpg"
                 alt="Vista de uma zona residencial de Maputo"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
