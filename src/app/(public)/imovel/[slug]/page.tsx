@@ -11,7 +11,6 @@ import { JsonLd } from "@/components/JsonLd";
 import {
   demoDisclaimer,
   getPropertyBySlug,
-  getPropertySlugs,
   getRelatedProperties,
 } from "@/lib/properties";
 import { propertyTypeLabels, transactionLabels } from "@/lib/format";
@@ -23,10 +22,6 @@ export const dynamic = "force-dynamic";
 type PageProps = {
   params: { slug: string };
 };
-
-export function generateStaticParams() {
-  return getPropertySlugs().map((slug) => ({ slug }));
-}
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const property = getPropertyBySlug(params.slug);

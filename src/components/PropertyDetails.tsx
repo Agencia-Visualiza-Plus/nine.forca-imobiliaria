@@ -68,15 +68,18 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
       </dl>
 
       <div className="mt-6 flex flex-col gap-2.5 sm:flex-row">
+        <a href="#agendar" className="btn-primary sm:flex-1">
+          Agendar visita
+        </a>
         <WhatsAppButton
           message={propertyWhatsappMessage(property.title)}
-          label="Marcar visita no WhatsApp"
+          label="WhatsApp"
           size="lg"
           className="sm:flex-1"
         />
         <a href={site.phoneHref} className="btn-outline sm:flex-1">
           <PhoneIcon className="h-4 w-4" />
-          Ligar agora
+          Ligar
         </a>
       </div>
 
@@ -90,10 +93,14 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
       <div className="mt-6 rounded-2xl border border-paper-line bg-white p-4">
         <p className="text-[13px] leading-relaxed text-ink-500">
           Quer ver este imóvel com mais detalhe?{" "}
+          <a href="#agendar" className="font-semibold text-brand-600 underline-offset-2 hover:underline">
+            Agende uma visita
+          </a>{" "}
+          neste anúncio ou{" "}
           <Link href="/contactos" className="font-semibold text-brand-600 underline-offset-2 hover:underline">
-            Fale com a Nine
-          </Link>{" "}
-          e agende uma visita acompanhada.
+            fale com a Nine
+          </Link>
+          .
         </p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { crmStats, getAllLeads, getVisitLeads, leadStatusLabels } from "@/lib/leads";
+import { leadStatusLabels } from "@/lib/lead-labels";
+import { crmStats, getAllLeads, getVisitLeads } from "@/lib/leads";
 import { getAllProperties } from "@/lib/properties";
 import { formatPrice, propertyTypeLabels, statusLabels } from "@/lib/format";
 

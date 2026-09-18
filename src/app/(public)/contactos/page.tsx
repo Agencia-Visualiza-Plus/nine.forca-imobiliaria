@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
+import { VisitForm } from "@/components/VisitForm";
 import { MapEmbed } from "@/components/MapEmbed";
 import { JsonLd } from "@/components/JsonLd";
 import { InstagramIcon, MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/icons";
@@ -164,6 +165,10 @@ export default function ContactPage() {
               <ContactForm />
             </div>
           </div>
+        </div>
+
+        <div id="agendar" className="mt-8 rounded-2xl border border-paper-line bg-white p-6 shadow-card sm:p-8">
+          <VisitForm />
         </div>
       </div>
     </>

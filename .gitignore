@@ -161,6 +161,12 @@
 **/out/
 next-env.d.ts
 
+# Local admin store
+data/*.json
+data/*.tmp
+public/uploads/*
+!public/uploads/.gitkeep
+
 # Compressed files
 *.zip
 *.rar

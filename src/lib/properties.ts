@@ -14,8 +14,6 @@ export function getAllProperties(): Property[] {
   return readProperties();
 }
 
-export const properties: Property[] = [];
-
 export function getFeaturedProperties(limit = 6): Property[] {
   return getAllProperties()
     .filter((p) => p.featured && p.status === "disponivel")

@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { getPropertySlugs } from "@/lib/properties";
 import { site } from "@/lib/site";
 
+export const dynamic = "force-dynamic";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 

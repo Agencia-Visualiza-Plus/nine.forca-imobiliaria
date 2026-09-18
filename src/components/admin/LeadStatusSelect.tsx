@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { leadStatusLabels } from "@/lib/leads";
+import { leadStatusLabels } from "@/lib/lead-labels";
 import type { LeadStatus } from "@/lib/types";
 
 const statuses = Object.keys(leadStatusLabels) as LeadStatus[];

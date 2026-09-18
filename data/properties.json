@@ -1,5 +1,39 @@
 [
   {
+    "id": "nfi-mu7ax3s8-1hhvm9",
+    "reference": "NFI-0013",
+    "slug": "casa-t4",
+    "title": "casa t4",
+    "type": "moradia",
+    "transactionType": "comprar",
+    "price": 2000000,
+    "currency": "MZN",
+    "pricePeriod": null,
+    "location": {
+      "neighborhood": "Magoanine",
+      "city": "Maputo",
+      "coordinates": {
+        "lat": -25.89,
+        "lng": 32.56
+      }
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "parking": 1,
+    "area": 220,
+    "description": "gvhfcfdcfv",
+    "features": [
+      "asa"
+    ],
+    "images": [
+      "/uploads/img-mu7avpjw-83ihh.png"
+    ],
+    "status": "disponivel",
+    "featured": true,
+    "createdAt": "2026-09-18",
+    "isDemo": false
+  },
+  {
     "id": "nfi-0001",
     "reference": "NFI-0001",
     "title": "Moradia T4 com jardim e piscina na Polana",

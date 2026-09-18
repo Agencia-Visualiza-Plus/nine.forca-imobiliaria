@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "lead-mu7ayqdd-ee1pg8",
+    "createdAt": "2026-09-18T18:39:20.064Z",
+    "updatedAt": "2026-09-18T18:39:20.064Z",
+    "name": "lkm",
+    "phone": "878888888",
+    "email": "hjgh@gmail.com",
+    "message": "dgfcgj",
+    "source": "visita",
+    "status": "visita-agendada",
+    "propertyId": "nfi-mu7ax3s8-1hhvm9",
+    "propertyTitle": "casa t4",
+    "visitDate": "2026-09-19",
+    "visitTime": "14:00",
+    "notes": ""
+  },
+  {
+    "id": "lead-mu7amzyi-h5n2w5",
+    "createdAt": "2026-09-18T18:30:12.618Z",
+    "updatedAt": "2026-09-18T18:41:06.961Z",
+    "name": "Ana Silva",
+    "phone": "+258 84 111 2222",
+    "email": "",
+    "message": "Prefiro de manha",
+    "source": "visita",
+    "status": "novo",
+    "propertyId": "nfi-0001",
+    "propertyTitle": "Moradia T4 com jardim e piscina na Polana",
+    "visitDate": "2026-09-20",
+    "visitTime": "10:00",
+    "notes": ""
+  },
+  {
+    "id": "lead-mu5za2yh-hdd3yx",
+    "createdAt": "2026-09-17T20:24:28.025Z",
+    "updatedAt": "2026-09-17T20:24:28.025Z",
+    "name": "Leonel",
+    "phone": "879771024",
+    "email": "leonel.r.matavele@visualizaplus.com",
+    "message": "Peco que ligue 20mins antes",
+    "source": "visita",
+    "status": "visita-agendada",
+    "propertyId": "nfi-0006",
+    "propertyTitle": "Moradia T4 mobilada para arrendar no Triunfo",
+    "visitDate": "2026-09-18",
+    "visitTime": "14:00",
+    "notes": ""
+  }
+]

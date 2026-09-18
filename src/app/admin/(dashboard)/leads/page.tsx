@@ -1,6 +1,7 @@
 import { LeadNotesForm } from "@/components/admin/LeadNotesForm";
 import { LeadStatusSelect } from "@/components/admin/LeadStatusSelect";
-import { crmStats, getAllLeads, leadSourceLabels, leadStatusLabels } from "@/lib/leads";
+import { leadSourceLabels, leadStatusLabels } from "@/lib/lead-labels";
+import { crmStats, getAllLeads } from "@/lib/leads";
 import { site } from "@/lib/site";
 import { customerWhatsappLink } from "@/lib/whatsapp";
 

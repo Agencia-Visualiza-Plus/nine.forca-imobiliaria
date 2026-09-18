@@ -1,6 +1,7 @@
 import { LeadNotesForm } from "@/components/admin/LeadNotesForm";
 import { LeadStatusSelect } from "@/components/admin/LeadStatusSelect";
-import { getVisitLeads, leadStatusLabels } from "@/lib/leads";
+import { leadStatusLabels } from "@/lib/lead-labels";
+import { getVisitLeads } from "@/lib/leads";
 import { customerWhatsappLink } from "@/lib/whatsapp";
 
 export const dynamic = "force-dynamic";

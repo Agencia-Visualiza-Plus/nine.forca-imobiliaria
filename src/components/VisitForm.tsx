@@ -4,14 +4,14 @@ import { useMemo, useState } from "react";
 import { CalendarIcon, CheckIcon } from "./icons";
 
 type VisitFormProps = {
-  propertyId: string;
-  propertyTitle: string;
+  propertyId?: string;
+  propertyTitle?: string;
   className?: string;
 };
 
 const timeSlots = ["09:00", "10:00", "11:00", "12:00", "14:00", "15:00", "16:00", "17:00"];
 
-export function VisitForm({ propertyId, propertyTitle, className = "" }: VisitFormProps) {
+export function VisitForm({ propertyId = "", propertyTitle = "", className = "" }: VisitFormProps) {
   const minDate = useMemo(() => {
     const date = new Date();
     date.setDate(date.getDate() + 1);
@@ -69,7 +69,7 @@ export function VisitForm({ propertyId, propertyTitle, className = "" }: VisitFo
           <div>
             <p className="font-display text-base font-bold text-ink">Pedido de visita enviado</p>
             <p className="mt-1 text-[13px] leading-relaxed text-ink-600">
-              Recebemos o seu pedido para visitar {propertyTitle} no dia {visitDate} às {visitTime}.
+              Recebemos o seu pedido{propertyTitle ? ` para visitar ${propertyTitle}` : ""} no dia {visitDate} às {visitTime}.
               A Nine confirma-lhe o horário pelo telefone {phone}.
             </p>
           </div>
