@@ -26,6 +26,7 @@ function probeLogo(): Promise<boolean> {
 
 export function Logo({ variant = "dark", className = "" }: LogoProps) {
   const [ready, setReady] = useState(false);
+  const textClass = variant === "dark" ? "text-ink" : "text-white";
 
   useEffect(() => {
     let cancelled = false;
@@ -37,25 +38,28 @@ export function Logo({ variant = "dark", className = "" }: LogoProps) {
     };
   }, []);
 
-  if (!ready) {
-    return (
-      <span
-        className={`block whitespace-nowrap font-display text-[13px] font-extrabold uppercase leading-none tracking-tight sm:text-sm ${
-          variant === "dark" ? "text-ink" : "text-white"
-        } ${className}`}
-      >
-        {site.name}
-      </span>
-    );
-  }
-
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={LOGO_SRC}
-      alt={`Logótipo da ${site.name}`}
-      onError={() => setReady(false)}
-      className={`block h-11 w-auto max-w-[170px] object-contain sm:h-12 sm:max-w-[200px] ${className}`}
-    />
+    <span className={`inline-flex items-center gap-2.5 ${className}`}>
+      {ready ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={LOGO_SRC}
+          alt=""
+          onError={() => setReady(false)}
+          className="block h-10 w-auto shrink-0 object-contain sm:h-11"
+        />
+      ) : null}
+      <span className={`block min-w-0 leading-[1.05] ${textClass}`}>
+        <span className="block whitespace-nowrap font-display text-[12px] font-extrabold uppercase tracking-tight sm:text-[13px]">
+          Nine Força
+        </span>
+        <span className={`block text-[10px] font-semibold uppercase tracking-[0.14em] sm:text-[11px] ${
+          variant === "dark" ? "text-ink-500" : "text-white/70"
+        }`}>
+          Imobiliária
+        </span>
+      </span>
+      <span className="sr-only">{site.name}</span>
+    </span>
   );
 }
