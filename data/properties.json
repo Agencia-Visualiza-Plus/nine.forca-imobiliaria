@@ -282,19 +282,19 @@
   {
     "id": "nfi-0007",
     "reference": "NFI-0007",
-    "title": "Escritório moderno no centro de Maputo",
     "slug": "escritorio-moderno-no-centro-de-maputo",
+    "title": "Escritório moderno no centro de Maputo",
     "type": "escritorio",
     "transactionType": "comprar",
     "price": 18000000,
     "currency": "MZN",
     "pricePeriod": null,
     "location": {
-      "neighborhood": "Baixa",
+      "neighborhood": "Maputo",
       "city": "Maputo",
       "coordinates": {
-        "lat": -25.9736,
-        "lng": 32.5752
+        "lat": -25.9653,
+        "lng": 32.5892
       }
     },
     "bedrooms": 0,
@@ -315,7 +315,7 @@
       "/properties/office-02.jpg",
       "/properties/office-03.jpg"
     ],
-    "status": "disponivel",
+    "status": "vendido",
     "featured": false,
     "createdAt": "2026-01-25",
     "isDemo": true

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { ChevronDownIcon } from "@/components/icons";
 import { leadStatusLabels } from "@/lib/lead-labels";
 import type { LeadStatus } from "@/lib/types";
 
@@ -19,16 +20,20 @@ export function LeadStatusSelect({ id, value }: { id: string; value: LeadStatus 
   }
 
   return (
-    <select
-      value={value}
-      onChange={(event) => void handleChange(event.target.value as LeadStatus)}
-      className="field py-1.5 pr-8 text-[13px]"
-    >
-      {statuses.map((status) => (
-        <option key={status} value={status}>
-          {leadStatusLabels[status]}
-        </option>
-      ))}
-    </select>
+    <div className="relative min-w-[168px]">
+      <select
+        value={value}
+        onChange={(event) => void handleChange(event.target.value as LeadStatus)}
+        className="field py-2 pr-9 text-[13px] font-medium"
+        aria-label="Estado do lead"
+      >
+        {statuses.map((status) => (
+          <option key={status} value={status}>
+            {leadStatusLabels[status]}
+          </option>
+        ))}
+      </select>
+      <ChevronDownIcon className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-500" />
+    </div>
   );
 }

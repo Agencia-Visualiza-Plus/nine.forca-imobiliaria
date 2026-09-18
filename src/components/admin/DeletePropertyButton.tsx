@@ -19,7 +19,12 @@ export function DeletePropertyButton({ id, title }: { id: string; title: string 
   }
 
   return (
-    <button type="button" onClick={() => void handleClick()} disabled={pending} className="text-[13px] font-semibold text-brand-700">
+    <button
+      type="button"
+      onClick={() => void handleClick()}
+      disabled={pending}
+      className="text-[13px] font-semibold text-brand-700 hover:text-brand-800 disabled:opacity-60"
+    >
       {pending ? "A remover…" : "Remover"}
     </button>
   );

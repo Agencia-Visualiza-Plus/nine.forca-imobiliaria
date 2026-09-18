@@ -70,5 +70,30 @@ export function formatDate(iso: string): string {
     day: "2-digit",
     month: "long",
     year: "numeric",
-  }).format(new Date(iso));
+  }).format(parseDateValue(iso));
+}
+
+export function formatDateShort(value: string): string {
+  if (!value) return "";
+  return new Intl.DateTimeFormat("pt-PT", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  }).format(parseDateValue(value));
+}
+
+export function formatVisitWhen(date: string, time?: string): string {
+  if (!date && !time) return "Data a confirmar";
+  const day = date
+    ? new Intl.DateTimeFormat("pt-PT", {
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+      }).format(parseDateValue(date))
+    : "Data a confirmar";
+  return time ? `${day} às ${time}` : day;
+}
+
+function parseDateValue(value: string): Date {
+  return new Date(value.includes("T") ? value : `${value}T12:00:00`);
 }
